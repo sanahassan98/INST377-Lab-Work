@@ -1,45 +1,98 @@
-YOUR NAME Lab 2: CSS Selectors
+<html>
+  <head>
+    <title>lab 2 selectors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="wrapper">
+    <h1 class="title">Sana Hassan Lab 2: Intro to HTML</h1>
+    <nav>
+      <a href="selectors.html"> Selectors</a>
+      <a href="index.html"> Main Page</a>
+    </nav>
 
-Selectors
-Main Page
+    <h2 class="subtitle">First, the basics.</h2>
 
-First, the basics.
+    You need the following to build your website.
+    <div class="section_1">
+      <div class="wrapper">
+        <ul>
+          <li>HTML and CSS</li>
+          <li>Javascript</li>
+          <li>Node.js</li>
+          <li>And other web development frameworks</li>
+        </ul>
+        <br />
+        <div>
+          <p>You should list your top 3 goals for this class below.</p>
+          <ol>
+            <li>Learn CSS</li>
+            <li>Learn node.js</li>
+            <li>Learn HTML</li>
+            <li>Learn New stuff</li>
+            <li>Get good at node.js</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="section_2">
+      <h2 class="subtitle">Let's Try Some Inline Elements</h2>
 
-You need the following to build your website.
+      <p>
+        Sometimes you want to <em>draw attention</em> to something in a line of
+        text.
+      </p>
+      <br />
 
-HTML and CSS
-Javascript
-Node.js
-And other web development frameworks
+      <p>
+        Sometimes you want to <strong>strongly emphasize something</strong> in
+        the text.
+      </p>
+      <br />
 
-You should list your top 3 goals for the class below.
+      <p>
+        Sometimes you want to <em><strong>do both</strong></em
+        >.
+      </p>
+      <br />
+    </div>
+    <div class="section_3">
+      <h3>Empty Elements</h3>
 
-Learn front-end web design
-Learn new programming languages
-Learn how to work with others in a technical space
-Learn popular web dev frameworks
-
-Let's Try Some Inline Elements
-
-Sometimes you want to draw attention to something in a line of text.
-
-Sometimes you want to strongly emphasize something in the text.
-
-Sometimes you want to do both.
-
-Empty Elements
-
-Soft line breaks can't wrap anything. Neither can image tags, or hard lines.
-Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.
-
-Images 
-Don't forget to use alt text on your images. It's important for accessibility.
-If you build this page right, your images will form a small "carousel"
-
-onigiri_1
-onigiri_2
-onigiri_3
-onigiri_4
-
-Include a hyperlink here to your github repository for class.
-If you want your repo to be private, be sure to invite Prof A as a "collaborator."
+      Soft line breaks can't wrap anything.<br />
+      Neither can image tags, or hard lines.<br />
+      Add a hard line under here, and make sure you've used some soft line
+      breaks to match your page to the sample.
+      <hr />
+    </div>
+    <div class="section_4 default">
+      <div class="left">
+        <h2>Images</h2>
+        <p>Include the four images in the /images folder below</p>
+        <br/>
+        <p>
+          Don't forget to use alt text on your images. It's important for
+          accessibility.
+        </p>
+      </div>
+      <div class="carousel">
+        <div class="slides">
+          <img src="images/mochi.jpg" alt="Mochi Ball Inside a Bubble" />
+          <img src="images/mochi.gif" alt="Mochi Ball is Dancing" />
+          <img src="images/mochi.svg" alt="Mochi Ball with Bézier Handles" />
+          <img src="images/mochi.png" alt="Just a Mochi Ball" />
+        </div>
+      </div>
+    </div>
+    <nav class="title wrapper">
+      <hr />
+      <a
+        href="https://github.com/sanahassan98/INST377-Lab-Work"
+        target="_blank"
+        >Include a hyperlink here to your github repository for class.</a
+      ><br />
+      <br />
+      If you want your repo to be private, be sure to invite Prof A as a
+      "collaborator."
+    </nav>
+  </body>
+</html>
