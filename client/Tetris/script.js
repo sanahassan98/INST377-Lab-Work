@@ -1,2 +1,7 @@
-// edit
-// hello
+document.addEventListener('DOMContentLoaded', () => {
+    
+
+
+
+
+})
