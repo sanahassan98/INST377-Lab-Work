@@ -25,3 +25,7 @@ body {
   max-width: 960px;
   margin-top: 25px;
 }
+
+.column {
+  min-width: 300px;
+}

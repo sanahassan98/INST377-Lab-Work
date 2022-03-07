@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 5 - HTML Form Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="notification is-warning">Prof A's Lab 5</div>
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <form
+          class="box"
+          action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json"
+        >
+          <div class="field">
+            <label class="label">First Name</label>
+            <div class="control">
+              <input name="first_name" class="input" type="text" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Food Preferance</label>
+            <div class="control">
+              <input name="Food_Preference" class="input" type="text" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Veggie or Vegan?</label>
+            <div class="control">
+              <label class="radio">
+                <input
+                  id="veggie_or_vegan_yes"
+                  name="veggie_or_vegan"
+                  type="radio"
+                  value="yes"
+                  for="veggie_or_vegan_yes"
+                />
+                yes
+              </label>
+              <label class="radio">
+                <input
+                  id="veggie_or_vegan_no"
+                  name="veggie_or_vegan"
+                  type="radio"
+                  value="no"
+                  for="veggie_or_vegan_no"
+                />
+                no
+              </label>
+            </div>
+          </div>
+
+          <button class="button is-primary">submit</button>
+        </form>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="box">
+            This is going to be something in two weeks.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -141,3 +141,10 @@ button.next {
   background-color: orange;
   font-weight: bold;
 }
+.next{
+  border: solid;
+  border-color: green;
+  border-radius: 10px;
+  background-color: orange;
+  font-weight: bold;
+}
