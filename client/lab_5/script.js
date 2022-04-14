@@ -1,6 +1,7 @@
 // As the last step of your lab, hook this up to index.html
 
 async function mainEvent() { // the async keyword means we can make API requests
+  console.log('mainevent');
   const form = document.querySelector('.main_form');
   form.addEventListener('submit', async (submitEvent) => { // async has to be declared all the way to get an await
     submitEvent.preventDefault(); // This prevents your page from refreshing!
@@ -14,4 +15,4 @@ async function mainEvent() { // the async keyword means we can make API requests
 }
 
 // this actually runs first! It's calling the function above
-document.addEventListener('DOMContentLoaded', async () => mainEvent()); // the async keyword means we can make API requests
+document.addEventListener('DOMContentLoaded', mainEvent); // the async keyword means we can make API requests
