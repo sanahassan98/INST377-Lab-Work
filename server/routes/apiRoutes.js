@@ -12,13 +12,40 @@ const router = express.Router();
 // localhost:3000/api
 router.get('/', (req, res) => {
   console.log('You touched the default route!');
-  res.json({message: 'Welcome to the UMD Dining API!'});
+  res.json({message: 'Welcome to the UMD Dining API!asdd'});
   // res.send('Welcome to the UMD Dining API!');
 });
 
 // /////////////////////////////////
 // Food Inspection Set Demos
 // /////////////////////////////////
+
+router.route('/blue')
+  .get(async (req, res) => {
+    try {
+      const message = 'Welcome to the Blue API!';
+      res.json({message: message});
+    } catch (err) {
+      console.log(err);
+      res.json({error: 'there was an error'});
+    }
+  });
+
+router.route('/green/:id')
+  .get(async (req, res) => {
+    try {
+      const {id} = req.params;
+      const message = `Welcome to the Green API k8!${id}`;
+      if (id === '12') {
+        throw new Error('id is 12, and that is a problem!');
+      }
+      res.json({message: message});
+    } catch (err) {
+      console.log(err);
+      res.json({error: 'there was an error'});
+    }
+  });
+
 router.route('/foodServicesPG')
   .get(async (req, res) => {
     try {
