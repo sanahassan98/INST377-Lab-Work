@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 5 - HTML Form Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="notification is-warning">Prof A's Lab 7</div>
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <form input
+          class="box main_form"
+        >
+          <div class="field">
+            <label class="label">Owner Name</label>
+            <div class="control">
+              <input name="owner" id="owner" class="input" type="text" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Restaurant Name</label>
+            <div class="control">
+              <input name="name" id="name" class="input" type="text" />
+            </div>
+          </div>
+          
+
+          <button class="button is-primary">submit</button>
+        </form>
+      </div>
+
+      <div class="column is-one-third">
+        <ul class="box" id="resto-list">
+        
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
