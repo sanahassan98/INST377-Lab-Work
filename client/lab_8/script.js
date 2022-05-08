@@ -1,3 +1,15 @@
+function initMap() {
+  const map = L.map('map').setView([38.9897, -76.9378], 13);
+  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiYW5jaWVudGRlcHRoc3NoIiwiYSI6ImNsMnh1cjQ0MjB6OWIzbnBmZGE2MXdmMmsifQ.78FEBCP_Xsdb-4Pn_N1Low'
+}).addTo(map);
+  return map;
+}
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
@@ -56,6 +68,7 @@ async function mainEvent() {
   const owner = document.getElementById("owner");
   const form = document.querySelector(".main_form");
   const button = document.querySelector("button");
+  var map =   initMap();
   const results = await fetch("/api/foodServicesPG"); // This accesses some data from our API
   const arrayFromJson = await results.json(); // This changes it into data we can use - an object
   button.style.setProperty("display", "none");

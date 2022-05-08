@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 8 - JSON to Map Markers  Sana Hassan</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+
+
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+ integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+ crossorigin=""></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="notification is-warning">Prof A's Lab 7</div>
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <form input
+          class="box main_form"
+        >
+          <div class="field">
+            <label class="label">Owner Name</label>
+            <div class="control">
+              <input name="owner" id="owner" class="input" type="text" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Restaurant Name</label>
+            <div class="control">
+              <input name="name" id="name" class="input" type="text" />
+            </div>
+          </div>
+          
+
+          <button class="button is-primary">submit</button>
+        </form>
+      </div>
+
+      <div class="column is-one-third">
+        <ul class="box" id="resto-list">
+        
+        </ul>
+      </div>
+      <div class="column">
+        <div id="map">
+
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
