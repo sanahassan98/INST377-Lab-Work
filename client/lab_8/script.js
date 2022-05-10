@@ -31,7 +31,9 @@ function removeMarkers(map) {
 function markerPlace(map, markers) {
   removeMarkers(map);
   addMarkers(map, markers);
-  map.setView(markers[0], 13);
+  if (markers.length >= 1) {
+    map.setView(markers[0], 13);
+  }
 }
 function getRestaurantLatLong(restaurant) {
   return restaurant.geocoded_column_1.coordinates.reverse();
